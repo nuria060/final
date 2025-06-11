@@ -580,6 +580,7 @@ footer{
   grid-row: 3;
   background-color: rgb(40, 116, 40);
   color: white;
+  font-family: 'lato';
 }
 
 #parte1_footer{
@@ -599,7 +600,109 @@ footer{
 
 .redes{
   width: 40px;
+  height: 40px;
 }
 
-/* @media */
+@media (max-width: 768px) {
+
+  #layout {
+    grid-template-rows: auto auto auto;
+  }
+
+  #top {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  #menu {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+  #menu a {
+    padding: 5px 0;
+  }
+
+  #banner {
+    background-size: cover;
+    height: auto;
+    padding: 40px 10px;
+    text-align: center;
+  }
+
+  #banner_titulo {
+    font-size: 30px;
+  }
+
+  .mision-vision {
+    flex-direction: column;
+  }
+
+  #sobre-nosotros {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #caja-principal {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  #caja-tractor img {
+    width: 80%;
+    margin: 20px auto;
+    display: block;
+  }
+
+  #sobreNosotros {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #beneficio {
+    flex-direction: column;
+  }
+
+  .equipo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .productos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #tecnologia {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-tecnologia {
+    gap: 20px;
+  }
+
+  #ventajas {
+    grid-template-rows: auto;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  #parte1_footer,
+  #parte2_footer {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .formulario {
+    padding: 15px;
+  }
+
+}
+
   
